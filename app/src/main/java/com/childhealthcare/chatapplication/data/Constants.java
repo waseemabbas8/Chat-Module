@@ -1,0 +1,5 @@
+package com.childhealthcare.chatapplication.data;
+
+public final class Constants {
+    public static final String TOKEN = "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC8xNjUuMjIuMTgzLjdcL2FwaVwvbG9naW4iLCJpYXQiOjE2MDg2NTk2NDgsImV4cCI6MTYwODc0NjA0OCwibmJmIjoxNjA4NjU5NjQ4LCJqdGkiOiJkdWhGMzdlQUZRMGgwc2VuIiwic3ViIjoxNzYsInBydiI6Ijg3ZTBhZjFlZjlmZDE1ODEyZmRlYzk3MTUzYTE0ZTBiMDQ3NTQ2YWEifQ.jLi3fdUluSbr6YSqhwaUdjYNk5GKNVg20nUPnzClEbk";
+}

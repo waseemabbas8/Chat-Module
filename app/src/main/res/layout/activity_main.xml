@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_messages"
+        android:layout_above="@id/chat_box"
+        android:layout_marginLeft="@dimen/views_standard_margin"
+        android:layout_marginRight="@dimen/views_standard_margin"
+        tools:listitem="@layout/item_left_message"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:reverseLayout="true"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"/>
+
+    <LinearLayout
+        android:id="@+id/chat_box"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.cardview.widget.CardView
+            android:layout_margin="@dimen/views_standard_margin"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="50dp">
+
+            <EditText
+                android:id="@+id/msg_body"
+                android:hint="@string/hint_type_message"
+                android:padding="@dimen/views_standard_margin"
+                android:textSize="16sp"
+                android:background="@null"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+        </androidx.cardview.widget.CardView>
+
+        <ImageView
+            android:id="@+id/send_message"
+            android:background="@drawable/bg_circle"
+            android:padding="12dp"
+            app:srcCompat="@drawable/ic_send"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginRight="@dimen/views_standard_margin"
+            android:layout_marginEnd="@dimen/views_standard_margin" />
+
+    </LinearLayout>
+
+</RelativeLayout>
